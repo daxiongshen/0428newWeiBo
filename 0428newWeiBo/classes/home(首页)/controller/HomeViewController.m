@@ -22,7 +22,21 @@
    
     
     self.navigationItem.rightBarButtonItem = [UIBarButtonItem itemWithImageName:@"navigationbar_friendsearch"  highImageName:@"navigationbar_friendsearch_highlighted" target:self action:@selector(friendSearch)];
-    NSLog(@"sdsad");
+    
+    //加载一个textView玩一玩
+    
+    UITextField *text = [[UITextField alloc]init];
+    text.backgroundColor = [UIColor greenColor];
+    text.frame = CGRectMake(100, 100, 100, 30);
+    //可以使用inputAccessoryView 这个属性自定义键盘
+
+      text.inputAccessoryView = [[[NSBundle mainBundle] loadNibNamed:@"KeyboardTool" owner:nil options:nil] lastObject];
+    
+    
+      [self.view addSubview:text];
+    
+    
+    
 
 }
 

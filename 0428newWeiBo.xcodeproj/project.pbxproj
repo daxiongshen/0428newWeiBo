@@ -8,7 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		D043B1CA1AEF9D3E00FCC090 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D043B1C91AEF9D3E00FCC090 /* HomeViewController.m */; };
-		D043B1CD1AEFA6FD00FCC090 /* PeNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = D043B1CC1AEFA6FD00FCC090 /* PeNavigationController.m */; };
+		D043B1CF1AF0718200FCC090 /* Keyboard.xib in Resources */ = {isa = PBXBuildFile; fileRef = D043B1CE1AF0718200FCC090 /* Keyboard.xib */; };
+		D043B1D11AF0739700FCC090 /* KeyboardTool.xib in Resources */ = {isa = PBXBuildFile; fileRef = D043B1D01AF0739700FCC090 /* KeyboardTool.xib */; };
 		D05488351AEF07CC00E37BD4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D05488341AEF07CC00E37BD4 /* main.m */; };
 		D05488381AEF07CC00E37BD4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D05488371AEF07CC00E37BD4 /* AppDelegate.m */; };
 		D054883B1AEF07CC00E37BD4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D054883A1AEF07CC00E37BD4 /* ViewController.m */; };
@@ -34,8 +35,8 @@
 /* Begin PBXFileReference section */
 		D043B1C81AEF9D3E00FCC090 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		D043B1C91AEF9D3E00FCC090 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
-		D043B1CB1AEFA6FD00FCC090 /* PeNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PeNavigationController.h; sourceTree = "<group>"; };
-		D043B1CC1AEFA6FD00FCC090 /* PeNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PeNavigationController.m; sourceTree = "<group>"; };
+		D043B1CE1AF0718200FCC090 /* Keyboard.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Keyboard.xib; sourceTree = "<group>"; };
+		D043B1D01AF0739700FCC090 /* KeyboardTool.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KeyboardTool.xib; sourceTree = "<group>"; };
 		D054882F1AEF07CC00E37BD4 /* 0428newWeiBo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 0428newWeiBo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D05488331AEF07CC00E37BD4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D05488341AEF07CC00E37BD4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -176,6 +177,8 @@
 		D054885C1AEF08C700E37BD4 /* view */ = {
 			isa = PBXGroup;
 			children = (
+				D043B1D01AF0739700FCC090 /* KeyboardTool.xib */,
+				D043B1CE1AF0718200FCC090 /* Keyboard.xib */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -210,8 +213,6 @@
 			children = (
 				D054886F1AEF0A0A00E37BD4 /* PeTabBarViewController.h */,
 				D05488701AEF0A0A00E37BD4 /* PeTabBarViewController.m */,
-				D043B1CB1AEFA6FD00FCC090 /* PeNavigationController.h */,
-				D043B1CC1AEFA6FD00FCC090 /* PeNavigationController.m */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -412,8 +413,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D043B1D11AF0739700FCC090 /* KeyboardTool.xib in Resources */,
 				D054883E1AEF07CC00E37BD4 /* Main.storyboard in Resources */,
 				D05488401AEF07CC00E37BD4 /* Images.xcassets in Resources */,
+				D043B1CF1AF0718200FCC090 /* Keyboard.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,7 +438,6 @@
 				D05488381AEF07CC00E37BD4 /* AppDelegate.m in Sources */,
 				D05488351AEF07CC00E37BD4 /* main.m in Sources */,
 				D054887E1AEF117E00E37BD4 /* UIView+Extension.m in Sources */,
-				D043B1CD1AEFA6FD00FCC090 /* PeNavigationController.m in Sources */,
 				D054887D1AEF117E00E37BD4 /* UIImage+Extension.m in Sources */,
 				D05488711AEF0A0A00E37BD4 /* PeTabBarViewController.m in Sources */,
 				D054887C1AEF117E00E37BD4 /* UIBarButtonItem+Extension.m in Sources */,
