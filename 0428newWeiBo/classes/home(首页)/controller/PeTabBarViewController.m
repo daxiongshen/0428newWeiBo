@@ -7,14 +7,19 @@
 //
 
 #import "PeTabBarViewController.h"
+#import "HomeViewController.h"
+#import "PeNavigationController.h"
 
 @implementation PeTabBarViewController
 
  - (void)viewDidLoad
 {
+    [super viewDidLoad];
+
     
-    UITableViewController *home = [[UITableViewController alloc]init];
+    HomeViewController *home = [[HomeViewController alloc]init];
     [self addOneChildVc:home title:@"首页" imageName:@"tabbar_home"  selectedName:@"tabbar_home_selected"];
+    
     UITableViewController *message = [[UITableViewController alloc]init];
       [self addOneChildVc:message title:@"消息" imageName:@"tabbar_message_center"  selectedName:@"tabbar_message_center_selected"];
     UITableViewController *discover = [[UITableViewController alloc]init];
@@ -39,9 +44,9 @@
 
 -(void) addOneChildVc:(UIViewController *)childVc title:(NSString *)title imageName:(NSString *)imagedName selectedName:(NSString *) selectedName
 {
-    childVc.view.backgroundColor = HMRandomColor;
+    childVc.title = title;
     
-    childVc.tabBarItem.title=title;
+   
     childVc.tabBarItem.image = [UIImage imageNamed:imagedName];
     UIImage *selectedImage = [UIImage imageWithName:selectedName];
     
@@ -49,7 +54,17 @@
         selectedImage = [selectedImage imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     }
     childVc.tabBarItem.selectedImage = selectedImage;
-    [self addChildViewController:childVc];
+   
+    
+    
+    // 添加为tabbar控制器的子控制器
+    //自定义navigationContoller
+//    PeNavigationController *nav = [[PeNavigationController alloc] initWithRootViewController:childVc];
+//    [self addChildViewController:nav];
+    
+    UINavigationController *nav  = [[UINavigationController alloc] initWithRootViewController:childVc];
+     [self addChildViewController:nav];
+    //    [self addChildViewController:nav];
 }
 /**
  
