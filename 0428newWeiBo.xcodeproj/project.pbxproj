@@ -10,6 +10,7 @@
 		D043B1CA1AEF9D3E00FCC090 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D043B1C91AEF9D3E00FCC090 /* HomeViewController.m */; };
 		D043B1CF1AF0718200FCC090 /* Keyboard.xib in Resources */ = {isa = PBXBuildFile; fileRef = D043B1CE1AF0718200FCC090 /* Keyboard.xib */; };
 		D043B1D11AF0739700FCC090 /* KeyboardTool.xib in Resources */ = {isa = PBXBuildFile; fileRef = D043B1D01AF0739700FCC090 /* KeyboardTool.xib */; };
+		D043B1D81AF0BF2700FCC090 /* DiscorverController.m in Sources */ = {isa = PBXBuildFile; fileRef = D043B1D71AF0BF2700FCC090 /* DiscorverController.m */; };
 		D05488351AEF07CC00E37BD4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D05488341AEF07CC00E37BD4 /* main.m */; };
 		D05488381AEF07CC00E37BD4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D05488371AEF07CC00E37BD4 /* AppDelegate.m */; };
 		D054883B1AEF07CC00E37BD4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D054883A1AEF07CC00E37BD4 /* ViewController.m */; };
@@ -37,6 +38,8 @@
 		D043B1C91AEF9D3E00FCC090 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		D043B1CE1AF0718200FCC090 /* Keyboard.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Keyboard.xib; sourceTree = "<group>"; };
 		D043B1D01AF0739700FCC090 /* KeyboardTool.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KeyboardTool.xib; sourceTree = "<group>"; };
+		D043B1D61AF0BF2700FCC090 /* DiscorverController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscorverController.h; sourceTree = "<group>"; };
+		D043B1D71AF0BF2700FCC090 /* DiscorverController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscorverController.m; sourceTree = "<group>"; };
 		D054882F1AEF07CC00E37BD4 /* 0428newWeiBo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 0428newWeiBo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D05488331AEF07CC00E37BD4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D05488341AEF07CC00E37BD4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -78,6 +81,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D043B1D21AF0BEEE00FCC090 /* discorver(发现) */ = {
+			isa = PBXGroup;
+			children = (
+				D043B1D31AF0BEEE00FCC090 /* controller */,
+				D043B1D41AF0BEEE00FCC090 /* model */,
+				D043B1D51AF0BEEE00FCC090 /* view */,
+			);
+			path = "discorver(发现)";
+			sourceTree = "<group>";
+		};
+		D043B1D31AF0BEEE00FCC090 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				D043B1D61AF0BF2700FCC090 /* DiscorverController.h */,
+				D043B1D71AF0BF2700FCC090 /* DiscorverController.m */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		D043B1D41AF0BEEE00FCC090 /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		D043B1D51AF0BEEE00FCC090 /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
 		D05488261AEF07CC00E37BD4 = {
 			isa = PBXGroup;
 			children = (
@@ -139,10 +175,10 @@
 		D05488581AEF08C700E37BD4 /* classes */ = {
 			isa = PBXGroup;
 			children = (
+				D043B1D21AF0BEEE00FCC090 /* discorver(发现) */,
 				D05488591AEF08C700E37BD4 /* home(首页) */,
 				D054885D1AEF08C700E37BD4 /* main(主要) */,
 				D05488631AEF08C700E37BD4 /* message(消息) */,
-				D05488671AEF08C700E37BD4 /* profile(发现) */,
 				D054886B1AEF08C700E37BD4 /* profile(我) */,
 			);
 			path = classes;
@@ -265,37 +301,6 @@
 			sourceTree = "<group>";
 		};
 		D05488661AEF08C700E37BD4 /* view */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = view;
-			sourceTree = "<group>";
-		};
-		D05488671AEF08C700E37BD4 /* profile(发现) */ = {
-			isa = PBXGroup;
-			children = (
-				D05488681AEF08C700E37BD4 /* controller */,
-				D05488691AEF08C700E37BD4 /* model */,
-				D054886A1AEF08C700E37BD4 /* view */,
-			);
-			path = "profile(发现)";
-			sourceTree = "<group>";
-		};
-		D05488681AEF08C700E37BD4 /* controller */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = controller;
-			sourceTree = "<group>";
-		};
-		D05488691AEF08C700E37BD4 /* model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = model;
-			sourceTree = "<group>";
-		};
-		D054886A1AEF08C700E37BD4 /* view */ = {
 			isa = PBXGroup;
 			children = (
 			);
@@ -435,6 +440,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D054883B1AEF07CC00E37BD4 /* ViewController.m in Sources */,
+				D043B1D81AF0BF2700FCC090 /* DiscorverController.m in Sources */,
 				D05488381AEF07CC00E37BD4 /* AppDelegate.m in Sources */,
 				D05488351AEF07CC00E37BD4 /* main.m in Sources */,
 				D054887E1AEF117E00E37BD4 /* UIView+Extension.m in Sources */,

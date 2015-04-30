@@ -8,6 +8,7 @@
 
 #import "PeTabBarViewController.h"
 #import "HomeViewController.h"
+#import "DiscorverController.h"
 
 
 @implementation PeTabBarViewController
@@ -22,7 +23,7 @@
     
     UITableViewController *message = [[UITableViewController alloc]init];
       [self addOneChildVc:message title:@"消息" imageName:@"tabbar_message_center"  selectedName:@"tabbar_message_center_selected"];
-    UITableViewController *discover = [[UITableViewController alloc]init];
+    DiscorverController *discover = [[DiscorverController alloc]init];
       [self addOneChildVc:discover title:@"发现" imageName:@"tabbar_discover"  selectedName:@"tabbar_discover_selected"];
     UITableViewController *profile = [[UITableViewController alloc]init];
       [self addOneChildVc:profile title:@"我" imageName:@"tabbar_profile"  selectedName:@"tabbar_profile_selected"];
