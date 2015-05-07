@@ -11,16 +11,20 @@
 		D043B1CF1AF0718200FCC090 /* Keyboard.xib in Resources */ = {isa = PBXBuildFile; fileRef = D043B1CE1AF0718200FCC090 /* Keyboard.xib */; };
 		D043B1D11AF0739700FCC090 /* KeyboardTool.xib in Resources */ = {isa = PBXBuildFile; fileRef = D043B1D01AF0739700FCC090 /* KeyboardTool.xib */; };
 		D043B1D81AF0BF2700FCC090 /* DiscorverController.m in Sources */ = {isa = PBXBuildFile; fileRef = D043B1D71AF0BF2700FCC090 /* DiscorverController.m */; };
+		D043B1DF1AF1B8E200FCC090 /* PeSearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = D043B1DE1AF1B8E200FCC090 /* PeSearchBar.m */; };
+		D043B1E21AF1D0DF00FCC090 /* PeTitleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = D043B1E11AF1D0DF00FCC090 /* PeTitleButton.m */; };
 		D05488351AEF07CC00E37BD4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D05488341AEF07CC00E37BD4 /* main.m */; };
 		D05488381AEF07CC00E37BD4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D05488371AEF07CC00E37BD4 /* AppDelegate.m */; };
 		D054883B1AEF07CC00E37BD4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D054883A1AEF07CC00E37BD4 /* ViewController.m */; };
 		D054883E1AEF07CC00E37BD4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D054883C1AEF07CC00E37BD4 /* Main.storyboard */; };
 		D05488401AEF07CC00E37BD4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D054883F1AEF07CC00E37BD4 /* Images.xcassets */; };
 		D054884F1AEF07CC00E37BD4 /* _428newWeiBoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D054884E1AEF07CC00E37BD4 /* _428newWeiBoTests.m */; };
-		D05488711AEF0A0A00E37BD4 /* PeTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D05488701AEF0A0A00E37BD4 /* PeTabBarViewController.m */; };
 		D054887C1AEF117E00E37BD4 /* UIBarButtonItem+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = D05488771AEF117E00E37BD4 /* UIBarButtonItem+Extension.m */; };
 		D054887D1AEF117E00E37BD4 /* UIImage+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = D05488791AEF117E00E37BD4 /* UIImage+Extension.m */; };
 		D054887E1AEF117E00E37BD4 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = D054887B1AEF117E00E37BD4 /* UIView+Extension.m */; };
+		D0594E9F1AFA164E00BCAF53 /* PePopMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = D0594E9E1AFA164E00BCAF53 /* PePopMenu.m */; };
+		D08BD0EC1AFB65D300811B7E /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D08BD0EB1AFB65D300811B7E /* ProfileViewController.m */; };
+		D08BD0F91AFB67D900811B7E /* PeTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D08BD0F71AFB67D900811B7E /* PeTabBarViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +44,10 @@
 		D043B1D01AF0739700FCC090 /* KeyboardTool.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KeyboardTool.xib; sourceTree = "<group>"; };
 		D043B1D61AF0BF2700FCC090 /* DiscorverController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscorverController.h; sourceTree = "<group>"; };
 		D043B1D71AF0BF2700FCC090 /* DiscorverController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscorverController.m; sourceTree = "<group>"; };
+		D043B1DD1AF1B8E200FCC090 /* PeSearchBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PeSearchBar.h; sourceTree = "<group>"; };
+		D043B1DE1AF1B8E200FCC090 /* PeSearchBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PeSearchBar.m; sourceTree = "<group>"; };
+		D043B1E01AF1D0DF00FCC090 /* PeTitleButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PeTitleButton.h; sourceTree = "<group>"; };
+		D043B1E11AF1D0DF00FCC090 /* PeTitleButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PeTitleButton.m; sourceTree = "<group>"; };
 		D054882F1AEF07CC00E37BD4 /* 0428newWeiBo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 0428newWeiBo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D05488331AEF07CC00E37BD4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D05488341AEF07CC00E37BD4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -52,8 +60,6 @@
 		D05488481AEF07CC00E37BD4 /* 0428newWeiBoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = 0428newWeiBoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D054884D1AEF07CC00E37BD4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D054884E1AEF07CC00E37BD4 /* _428newWeiBoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _428newWeiBoTests.m; sourceTree = "<group>"; };
-		D054886F1AEF0A0A00E37BD4 /* PeTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PeTabBarViewController.h; path = "../../home(首页)/controller/PeTabBarViewController.h"; sourceTree = "<group>"; };
-		D05488701AEF0A0A00E37BD4 /* PeTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PeTabBarViewController.m; path = "../../home(首页)/controller/PeTabBarViewController.m"; sourceTree = "<group>"; };
 		D05488751AEF0F9B00E37BD4 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		D05488761AEF117E00E37BD4 /* UIBarButtonItem+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Extension.h"; sourceTree = "<group>"; };
 		D05488771AEF117E00E37BD4 /* UIBarButtonItem+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Extension.m"; sourceTree = "<group>"; };
@@ -61,6 +67,12 @@
 		D05488791AEF117E00E37BD4 /* UIImage+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Extension.m"; sourceTree = "<group>"; };
 		D054887A1AEF117E00E37BD4 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
 		D054887B1AEF117E00E37BD4 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
+		D0594E9D1AFA164E00BCAF53 /* PePopMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PePopMenu.h; sourceTree = "<group>"; };
+		D0594E9E1AFA164E00BCAF53 /* PePopMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PePopMenu.m; sourceTree = "<group>"; };
+		D08BD0EA1AFB65D300811B7E /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
+		D08BD0EB1AFB65D300811B7E /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
+		D08BD0F61AFB67D900811B7E /* PeTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PeTabBarViewController.h; sourceTree = "<group>"; };
+		D08BD0F71AFB67D900811B7E /* PeTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PeTabBarViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,9 +96,9 @@
 		D043B1D21AF0BEEE00FCC090 /* discorver(发现) */ = {
 			isa = PBXGroup;
 			children = (
+				D043B1DC1AF1B8D200FCC090 /* view */,
 				D043B1D31AF0BEEE00FCC090 /* controller */,
 				D043B1D41AF0BEEE00FCC090 /* model */,
-				D043B1D51AF0BEEE00FCC090 /* view */,
 			);
 			path = "discorver(发现)";
 			sourceTree = "<group>";
@@ -107,9 +119,11 @@
 			path = model;
 			sourceTree = "<group>";
 		};
-		D043B1D51AF0BEEE00FCC090 /* view */ = {
+		D043B1DC1AF1B8D200FCC090 /* view */ = {
 			isa = PBXGroup;
 			children = (
+				D043B1DD1AF1B8E200FCC090 /* PeSearchBar.h */,
+				D043B1DE1AF1B8E200FCC090 /* PeSearchBar.m */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -215,6 +229,10 @@
 			children = (
 				D043B1D01AF0739700FCC090 /* KeyboardTool.xib */,
 				D043B1CE1AF0718200FCC090 /* Keyboard.xib */,
+				D043B1E01AF1D0DF00FCC090 /* PeTitleButton.h */,
+				D043B1E11AF1D0DF00FCC090 /* PeTitleButton.m */,
+				D0594E9D1AFA164E00BCAF53 /* PePopMenu.h */,
+				D0594E9E1AFA164E00BCAF53 /* PePopMenu.m */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -222,8 +240,8 @@
 		D054885D1AEF08C700E37BD4 /* main(主要) */ = {
 			isa = PBXGroup;
 			children = (
+				D08BD0F31AFB67CF00811B7E /* controller */,
 				D054885E1AEF08C700E37BD4 /* category */,
-				D054885F1AEF08C700E37BD4 /* controller */,
 				D05488601AEF08C700E37BD4 /* model */,
 				D05488611AEF08C700E37BD4 /* other */,
 				D05488621AEF08C700E37BD4 /* view */,
@@ -242,15 +260,6 @@
 				D054887B1AEF117E00E37BD4 /* UIView+Extension.m */,
 			);
 			path = category;
-			sourceTree = "<group>";
-		};
-		D054885F1AEF08C700E37BD4 /* controller */ = {
-			isa = PBXGroup;
-			children = (
-				D054886F1AEF0A0A00E37BD4 /* PeTabBarViewController.h */,
-				D05488701AEF0A0A00E37BD4 /* PeTabBarViewController.m */,
-			);
-			path = controller;
 			sourceTree = "<group>";
 		};
 		D05488601AEF08C700E37BD4 /* model */ = {
@@ -310,18 +319,11 @@
 		D054886B1AEF08C700E37BD4 /* profile(我) */ = {
 			isa = PBXGroup;
 			children = (
-				D054886C1AEF08C700E37BD4 /* controller */,
+				D08BD0E91AFB65C300811B7E /* controller */,
 				D054886D1AEF08C700E37BD4 /* model */,
 				D054886E1AEF08C700E37BD4 /* view */,
 			);
 			path = "profile(我)";
-			sourceTree = "<group>";
-		};
-		D054886C1AEF08C700E37BD4 /* controller */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = controller;
 			sourceTree = "<group>";
 		};
 		D054886D1AEF08C700E37BD4 /* model */ = {
@@ -336,6 +338,24 @@
 			children = (
 			);
 			path = view;
+			sourceTree = "<group>";
+		};
+		D08BD0E91AFB65C300811B7E /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				D08BD0EA1AFB65D300811B7E /* ProfileViewController.h */,
+				D08BD0EB1AFB65D300811B7E /* ProfileViewController.m */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		D08BD0F31AFB67CF00811B7E /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				D08BD0F61AFB67D900811B7E /* PeTabBarViewController.h */,
+				D08BD0F71AFB67D900811B7E /* PeTabBarViewController.m */,
+			);
+			path = controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -445,9 +465,13 @@
 				D05488351AEF07CC00E37BD4 /* main.m in Sources */,
 				D054887E1AEF117E00E37BD4 /* UIView+Extension.m in Sources */,
 				D054887D1AEF117E00E37BD4 /* UIImage+Extension.m in Sources */,
-				D05488711AEF0A0A00E37BD4 /* PeTabBarViewController.m in Sources */,
 				D054887C1AEF117E00E37BD4 /* UIBarButtonItem+Extension.m in Sources */,
+				D043B1DF1AF1B8E200FCC090 /* PeSearchBar.m in Sources */,
+				D08BD0EC1AFB65D300811B7E /* ProfileViewController.m in Sources */,
 				D043B1CA1AEF9D3E00FCC090 /* HomeViewController.m in Sources */,
+				D043B1E21AF1D0DF00FCC090 /* PeTitleButton.m in Sources */,
+				D0594E9F1AFA164E00BCAF53 /* PePopMenu.m in Sources */,
+				D08BD0F91AFB67D900811B7E /* PeTabBarViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
