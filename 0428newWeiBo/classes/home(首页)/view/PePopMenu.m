@@ -102,6 +102,25 @@
     self.contentView.width = self.container.width - leftMargin - rightMargin;
     self.contentView.height = self.container.height - topMargin - bottomMargin;
 }
+- (void)setArrowPosition:(ArrayPosition)arrowPosition
+{
+    _arrowPosition = arrowPosition;
+    
+    switch (arrowPosition) {
+        case PositionCenter:
+            self.container.image = [UIImage resizedImage:@"popover_background"];
+            break;
+            
+        case PositionLeft:
+            self.container.image = [UIImage resizedImage:@"popover_background_left"];
+            break;
+            
+        case PositionRight:
+            self.container.image = [UIImage resizedImage:@"popover_background_right"];
+            break;
+    }
+}
+
 
 - (void)dismiss
 {

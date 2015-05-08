@@ -32,6 +32,7 @@
     CGFloat menuY = 55;
     CGFloat menuX = (self.view.width - menuW) * 0.5;
     menu.delegate= self;
+    menu.arrowPosition = PositionRight ;
     [menu showInRect:CGRectMake(menuX, menuY, menuW, menuH)];
 }
 

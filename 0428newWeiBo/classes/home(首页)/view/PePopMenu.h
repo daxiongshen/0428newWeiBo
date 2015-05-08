@@ -7,7 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+typedef enum {
+    PositionCenter = 0,
+    PositionLeft = 1,
+    PositionRight = 2,
+} ArrayPosition ;
 @class PePopMenu;
+
+
 
 @protocol PePopMenuDelegate <NSObject>
 
@@ -24,6 +31,9 @@
 
 @property(nonatomic,assign,getter= isDimBackGround ) BOOL dimBackGround;
 
+
+
+@property (nonatomic, assign) ArrayPosition arrowPosition ;
 
 -(instancetype) initWithContentView:(UIView *)view;
 
