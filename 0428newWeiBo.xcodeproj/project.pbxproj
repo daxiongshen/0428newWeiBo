@@ -25,6 +25,7 @@
 		D0594E9F1AFA164E00BCAF53 /* PePopMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = D0594E9E1AFA164E00BCAF53 /* PePopMenu.m */; };
 		D08BD0EC1AFB65D300811B7E /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D08BD0EB1AFB65D300811B7E /* ProfileViewController.m */; };
 		D08BD0F91AFB67D900811B7E /* PeTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D08BD0F71AFB67D900811B7E /* PeTabBarViewController.m */; };
+		D09F48B61AFC4F240064B767 /* PeTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = D09F48B51AFC4F240064B767 /* PeTabBar.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +74,8 @@
 		D08BD0EB1AFB65D300811B7E /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
 		D08BD0F61AFB67D900811B7E /* PeTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PeTabBarViewController.h; sourceTree = "<group>"; };
 		D08BD0F71AFB67D900811B7E /* PeTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PeTabBarViewController.m; sourceTree = "<group>"; };
+		D09F48B41AFC4F240064B767 /* PeTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PeTabBar.h; sourceTree = "<group>"; };
+		D09F48B51AFC4F240064B767 /* PeTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PeTabBar.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -281,6 +284,8 @@
 		D05488621AEF08C700E37BD4 /* view */ = {
 			isa = PBXGroup;
 			children = (
+				D09F48B41AFC4F240064B767 /* PeTabBar.h */,
+				D09F48B51AFC4F240064B767 /* PeTabBar.m */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -463,6 +468,7 @@
 				D043B1D81AF0BF2700FCC090 /* DiscorverController.m in Sources */,
 				D05488381AEF07CC00E37BD4 /* AppDelegate.m in Sources */,
 				D05488351AEF07CC00E37BD4 /* main.m in Sources */,
+				D09F48B61AFC4F240064B767 /* PeTabBar.m in Sources */,
 				D054887E1AEF117E00E37BD4 /* UIView+Extension.m in Sources */,
 				D054887D1AEF117E00E37BD4 /* UIImage+Extension.m in Sources */,
 				D054887C1AEF117E00E37BD4 /* UIBarButtonItem+Extension.m in Sources */,

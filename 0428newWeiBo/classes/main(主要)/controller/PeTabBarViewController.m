@@ -10,6 +10,10 @@
 #import "HomeViewController.h"
 #import "DiscorverController.h"
 #import "ProfileViewController.h"
+#import "PeTabBar.h"
+@interface PeTabBarViewController() <UITabBarControllerDelegate>
+
+@end
 
 
 @implementation PeTabBarViewController
@@ -29,10 +33,22 @@
     ProfileViewController *profile = [[ProfileViewController alloc]init];
       [self addOneChildVc:profile title:@"我" imageName:@"tabbar_profile"  selectedName:@"tabbar_profile_selected"];
     
+    //更换自定义的tabbar
+    PeTabBar *tabbar = [[PeTabBar alloc]init];
+    tabbar.backgroundImage = [UIImage imageNamed:@"tabbar_background"];
+    tabbar.selectionIndicatorImage = [UIImage imageWithName:@"navigationbar_button_background"];
+    [self setValue:tabbar forKey:@"tabBar"];
     
+    //监听按钮点击
+     self.delegate = self;
 }
 
 
+- (void)tabBarController:(UITabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController
+{
+    // 强制重新布局子控件（内部会调用layouSubviews）
+    [self.tabBar setNeedsLayout];
+}
 
 /**
  *  添加一个子控制器
