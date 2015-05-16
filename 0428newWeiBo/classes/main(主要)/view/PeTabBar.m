@@ -7,7 +7,7 @@
 //
 
 #import "PeTabBar.h"
-@interface PeTabBar()
+@interface PeTabBar()<PeTabBarProtocol>
 @property (nonatomic, weak) UIButton *plusButton;
 @end
 
@@ -50,7 +50,14 @@
 
 -(void) plusClick
 {
-    NSLog(@"aaa");
+   
+    //这里应该是需要给控制器发出通知代理 让他知道这个按钮进行了点击并反应
+    // 通知代理
+    if ([self.delegate respondsToSelector:@selector(PlusBtnClick:)]) {
+        [self.delegate PlusBtnClick:self];
+    }
+
+    
 }
 
 /**
@@ -59,7 +66,7 @@
 - (void)layoutSubviews
 {
     [super layoutSubviews];
-    NSLog(@"这里是布局");
+   
     //这里是加载新加的btn
     [self setupPlusButtonFrame];
     

@@ -11,7 +11,8 @@
 #import "DiscorverController.h"
 #import "ProfileViewController.h"
 #import "PeTabBar.h"
-@interface PeTabBarViewController() <UITabBarControllerDelegate>
+#import "ComPoseController.h"
+@interface PeTabBarViewController() <UITabBarControllerDelegate,PeTabBarProtocol>
 
 @end
 
@@ -41,13 +42,55 @@
     
     //监听按钮点击
      self.delegate = self;
+    //把所有的文字大小都统一
+    [self fontInit];
 }
 
-
-- (void)tabBarController:(UITabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController
+-(void)PlusBtnClick:(UITabBar *)tabBar
 {
-    // 强制重新布局子控件（内部会调用layouSubviews）
-    [self.tabBar setNeedsLayout];
+    NSLog(@"点击了按钮");
+    //弹出发微博的控制器
+    ComPoseController *compose =[[ComPoseController alloc]init];
+    UINavigationController *controller = [[UINavigationController alloc]initWithRootViewController:compose];
+    [self presentViewController:controller animated:YES completion:nil];
+    
+    
+}
+
+- (void) fontInit
+{
+    
+    // 通过appearance对象能修改整个项目中所有UIBarButtonItem的样式
+    UIBarButtonItem *appearance = [UIBarButtonItem appearance];
+    
+    /**设置文字属性**/
+    // 设置普通状态的文字属性
+    NSMutableDictionary *textAttrs = [NSMutableDictionary dictionary];
+    textAttrs[NSForegroundColorAttributeName] = [UIColor orangeColor];
+    textAttrs[NSFontAttributeName] = [UIFont systemFontOfSize:15];
+   
+    
+    
+    
+    
+    textAttrs[UITextAttributeTextShadowOffset] = [NSValue valueWithUIOffset:UIOffsetZero];
+    [appearance setTitleTextAttributes:textAttrs forState:UIControlStateNormal];
+    
+    // 设置高亮状态的文字属性
+    NSMutableDictionary *highTextAttrs = [NSMutableDictionary dictionaryWithDictionary:textAttrs];
+    highTextAttrs[NSForegroundColorAttributeName] = [UIColor redColor];
+    [appearance setTitleTextAttributes:highTextAttrs forState:UIControlStateHighlighted];
+    
+    // 设置不可用状态(disable)的文字属性
+    NSMutableDictionary *disableTextAttrs = [NSMutableDictionary dictionaryWithDictionary:textAttrs];
+    disableTextAttrs[NSForegroundColorAttributeName] = [UIColor lightGrayColor];
+    [appearance setTitleTextAttributes:disableTextAttrs forState:UIControlStateDisabled];
+    
+    /**设置背景**/
+    // 技巧: 为了让某个按钮的背景消失, 可以设置一张完全透明的背景图片
+    [appearance setBackgroundImage:[UIImage imageWithName:@"navigationbar_button_background"] forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
+    
+
 }
 
 /**
@@ -67,6 +110,17 @@
    
     childVc.tabBarItem.image = [UIImage imageNamed:imagedName];
     UIImage *selectedImage = [UIImage imageWithName:selectedName];
+    
+    // 设置tabBarItem的普通文字颜色
+    NSMutableDictionary *textAttrs = [NSMutableDictionary dictionary];
+    textAttrs[NSForegroundColorAttributeName] = [UIColor blackColor];
+    textAttrs[NSFontAttributeName] = [UIFont systemFontOfSize:10];
+    [childVc.tabBarItem setTitleTextAttributes:textAttrs forState:UIControlStateNormal];
+    
+    // 设置tabBarItem的选中文字颜色
+    NSMutableDictionary *selectedTextAttrs = [NSMutableDictionary dictionary];
+    selectedTextAttrs[NSForegroundColorAttributeName] = [UIColor orangeColor];
+    [childVc.tabBarItem setTitleTextAttributes:selectedTextAttrs forState:UIControlStateSelected];
     
     if (iOS7) {
         selectedImage = [selectedImage imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];

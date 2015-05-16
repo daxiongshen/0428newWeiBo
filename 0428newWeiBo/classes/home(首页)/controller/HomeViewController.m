@@ -19,7 +19,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    
+   
     self.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithImageName:@"navigationbar_friendsearch"  highImageName:@"navigationbar_friendsearch_highlighted" target:self action:@selector(friendSearch)];
    
     
@@ -126,6 +126,7 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:ID];
     }
     cell.textLabel.text = [NSString stringWithFormat:@"首页测试数据----%d", indexPath.row];
+    cell.backgroundColor = [UIColor redColor];
     return cell;
 }
 

@@ -8,6 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
+@class PeTabBar;
+
+@protocol PeTabBarProtocol <NSObject>
+
+@optional
+-(void) PlusBtnClick :(UITabBar *) tabBar;
+
+@end
+
 @interface PeTabBar : UITabBar
+@property (nonatomic,weak) id<PeTabBarProtocol> delegate;
 
 @end

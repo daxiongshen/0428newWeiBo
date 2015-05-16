@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 #import "PeTabBarViewController.h"
+#import "NewFeatureController.h"
+#import "OauthController.h"
 
 @interface AppDelegate ()
 
@@ -26,7 +28,11 @@
     self.window.frame = [UIScreen mainScreen].bounds;
     
     // 2.设置窗口的根控制器
-    self.window.rootViewController = [[PeTabBarViewController alloc] init];
+    //self.window.rootViewController = [[PeTabBarViewController alloc] init];
+   // self.window.rootViewController = [[NewFeatureController alloc]init];
+     self.window.rootViewController = [[OauthController alloc]init];
+    
+    //设置新特性的控制器
     [self.window makeKeyAndVisible];
     return YES;
 }
